@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:contentDescription="@string/label_content_description"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_bubbles" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    style="@style/H6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/text_balance"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvSaldo"
+                    style="@style/H1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_nilai"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:padding="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llHeader">
+
+                <ImageView
+                    android:id="@+id/ivPay"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:contentDescription="@string/label_content_description"
+                    android:src="@drawable/ic_pay"
+                    app:layout_constraintEnd_toStartOf="@id/ivTopup"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivTopup"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:contentDescription="@string/label_content_description"
+                    android:src="@drawable/ic_topup"
+                    app:layout_constraintEnd_toStartOf="@+id/tvScan"
+                    app:layout_constraintStart_toEndOf="@id/ivPay"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/tvScan"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:contentDescription="@string/label_content_description"
+                    android:src="@drawable/ic_scan"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivTopup"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvPay"
+                    style="@style/Subhead3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/text_pay"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/ivPay"
+                    app:layout_constraintStart_toStartOf="@+id/ivPay"
+                    app:layout_constraintTop_toBottomOf="@id/ivPay" />
+
+                <TextView
+                    android:id="@+id/tvTopup"
+                    style="@style/Subhead3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/top_up"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/ivTopup"
+                    app:layout_constraintStart_toStartOf="@+id/ivTopup"
+                    app:layout_constraintTop_toBottomOf="@id/ivTopup" />
+
+                <TextView
+                    style="@style/Subhead3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/text_scan"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/tvScan"
+                    app:layout_constraintStart_toStartOf="@+id/tvScan"
+                    app:layout_constraintTop_toBottomOf="@id/tvScan" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

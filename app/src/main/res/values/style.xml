@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="circularImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="Subhead3" parent="android:TextAppearance">
+        <item name="android:textColor">@color/darker_black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="H1" parent="android:TextAppearance">
+        <item name="android:textColor">@color/darker_black</item>
+        <item name="android:textSize">30sp</item>
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="H3" parent="android:TextAppearance">
+        <item name="android:textColor">@color/darker_black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="H6" parent="android:TextAppearance">
+        <item name="android:textColor">@color/darker_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+</resources>

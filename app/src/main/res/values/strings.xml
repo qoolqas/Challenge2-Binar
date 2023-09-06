@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Challenge2-Binar</string>
+    <string name="text_user_name">Hi, Sephie</string>
+    <string name="text_greeting">Welcome!</string>
+    <string name="text_balance">Balance</string>
+    <string name="text_nilai">Rp 2.000.000</string>
+    <string name="top_up">Top up</string>
+    <string name="text_scan">Scan</string>
+    <string name="text_pay">Pay</string>
+    <string name="text_rp_63_244">- Rp 63,244</string>
+    <string name="text_08_00_am">08.00 AM</string>
+    <string name="text_top_up">Top Up</string>
+    <string name="text_water">Water</string>
+    <string name="text_rp_50_000">+ Rp.50.000</string>
+    <string name="text_today_nov_30">Today, Nov 30</string>
+    <string name="text_details">Details</string>
+    <string name="text_last_transaction">Last Transaction</string>
+    <string name="text_pay_bill">Pay Bill</string>
+    <string name="text_phone">Phone</string>
+    <string name="text_data">Data</string>
+    <string name="text_invest">Invest</string>
+    <string name="text_game">Game</string>
+    <string name="text_net">Net</string>
+    <string name="text_pln">PLN</string>
+    <string name="text_bpjs">BPJS</string>
+    <string name="label_content_description">Image</string>
 </resources>
